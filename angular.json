@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -69,10 +70,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cadastro_wevo:build:production"
+              "browserTarget": "cadastro_wevo:build:production",
+              "proxyConfig": "/src/proxy.conf.json"
             },
             "development": {
-              "browserTarget": "cadastro_wevo:build:development"
+              "browserTarget": "cadastro_wevo:build:development",
+              "proxyConfig": "/src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -96,6 +99,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b8a32c1f-5c70-4ec2-880c-b1ff7cf87502"
   }
 }
