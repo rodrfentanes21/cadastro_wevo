@@ -70,12 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cadastro_wevo:build:production",
-              "proxyConfig": "/src/proxy.conf.json"
+              "browserTarget": "cadastro_wevo:build:production"
             },
             "development": {
-              "browserTarget": "cadastro_wevo:build:development",
-              "proxyConfig": "/src/proxy.conf.json"
+              "browserTarget": "cadastro_wevo:build:development"
             }
           },
           "defaultConfiguration": "development"
